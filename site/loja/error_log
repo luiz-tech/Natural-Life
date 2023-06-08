@@ -1,0 +1,86 @@
+[05-Jul-2021 15:51:39 America/Sao_Paulo] PHP Warning:  Invalid argument supplied for foreach() in /home/devimpulsionarte/public_html/trabalho/loja/index.php on line 209
+[05-Jul-2021 16:18:45 America/Sao_Paulo] PHP Warning:  Invalid argument supplied for foreach() in /home/devimpulsionarte/public_html/trabalho/loja/index.php on line 173
+[05-Jul-2021 16:19:40 America/Sao_Paulo] PHP Warning:  Invalid argument supplied for foreach() in /home/devimpulsionarte/public_html/trabalho/loja/index.php on line 173
+[05-Jul-2021 16:20:03 America/Sao_Paulo] PHP Warning:  Invalid argument supplied for foreach() in /home/devimpulsionarte/public_html/trabalho/loja/index.php on line 173
+[05-Jul-2021 16:20:41 America/Sao_Paulo] PHP Warning:  Invalid argument supplied for foreach() in /home/devimpulsionarte/public_html/trabalho/loja/index.php on line 173
+[05-Jul-2021 16:21:04 America/Sao_Paulo] PHP Warning:  Invalid argument supplied for foreach() in /home/devimpulsionarte/public_html/trabalho/loja/index.php on line 173
+[05-Jul-2021 16:21:44 America/Sao_Paulo] PHP Warning:  Invalid argument supplied for foreach() in /home/devimpulsionarte/public_html/trabalho/loja/index.php on line 173
+[05-Jul-2021 16:22:31 America/Sao_Paulo] PHP Warning:  Invalid argument supplied for foreach() in /home/devimpulsionarte/public_html/trabalho/loja/index.php on line 173
+[05-Jul-2021 16:24:46 America/Sao_Paulo] PHP Warning:  Invalid argument supplied for foreach() in /home/devimpulsionarte/public_html/trabalho/loja/index.php on line 173
+[05-Jul-2021 16:35:09 America/Sao_Paulo] PHP Warning:  require(conexao.php): failed to open stream: No such file or directory in /home/devimpulsionarte/public_html/trabalho/loja/loja-controller.php on line 3
+[05-Jul-2021 16:35:09 America/Sao_Paulo] PHP Warning:  require(conexao.php): failed to open stream: No such file or directory in /home/devimpulsionarte/public_html/trabalho/loja/loja-controller.php on line 3
+[05-Jul-2021 16:35:09 America/Sao_Paulo] PHP Fatal error:  require(): Failed opening required 'conexao.php' (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/devimpulsionarte/public_html/trabalho/loja/loja-controller.php on line 3
+[05-Jul-2021 16:35:30 America/Sao_Paulo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1044] Access denied for user 'devimpulsionarte_dev'@'localhost' to database 'devimpulsionarte_trabalho'' in /home/devimpulsionarte/public_html/trabalho/conexao.php:4
+Stack trace:
+#0 /home/devimpulsionarte/public_html/trabalho/conexao.php(4): PDO->__construct('mysql:host=loca...', 'devimpulsionart...', 'ole20Oly$')
+#1 /home/devimpulsionarte/public_html/trabalho/loja/loja-controller.php(4): conectar()
+#2 {main}
+  thrown in /home/devimpulsionarte/public_html/trabalho/conexao.php on line 4
+[05-Jul-2021 16:35:43 America/Sao_Paulo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1044] Access denied for user 'devimpulsionarte_dev'@'localhost' to database 'devimpulsionarte_trabalho'' in /home/devimpulsionarte/public_html/trabalho/conexao.php:4
+Stack trace:
+#0 /home/devimpulsionarte/public_html/trabalho/conexao.php(4): PDO->__construct('mysql:host=loca...', 'devimpulsionart...', 'ole20Oly$')
+#1 /home/devimpulsionarte/public_html/trabalho/loja/loja-controller.php(4): conectar()
+#2 {main}
+  thrown in /home/devimpulsionarte/public_html/trabalho/conexao.php on line 4
+[05-Jul-2021 16:36:49 America/Sao_Paulo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1044] Access denied for user 'devimpulsionarte_dev'@'localhost' to database 'devimpulsionarte_trabalho'' in /home/devimpulsionarte/public_html/trabalho/conexao.php:4
+Stack trace:
+#0 /home/devimpulsionarte/public_html/trabalho/conexao.php(4): PDO->__construct('mysql:host=loca...', 'devimpulsionart...', 'ole20Oly$')
+#1 /home/devimpulsionarte/public_html/trabalho/loja/loja-controller.php(4): conectar()
+#2 {main}
+  thrown in /home/devimpulsionarte/public_html/trabalho/conexao.php on line 4
+[05-Jul-2021 16:37:34 America/Sao_Paulo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1044] Access denied for user 'devimpulsionarte_dev'@'localhost' to database 'devimpulsionarte_trabalho'' in /home/devimpulsionarte/public_html/trabalho/conexao.php:4
+Stack trace:
+#0 /home/devimpulsionarte/public_html/trabalho/conexao.php(4): PDO->__construct('mysql:host=loca...', 'devimpulsionart...', 'ole20Oly$')
+#1 /home/devimpulsionarte/public_html/trabalho/loja/loja-controller.php(5): conectar()
+#2 {main}
+  thrown in /home/devimpulsionarte/public_html/trabalho/conexao.php on line 4
+[05-Jul-2021 16:38:24 America/Sao_Paulo] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1044] Access denied for user 'devimpulsionarte_dev'@'localhost' to database 'devimpulsionarte_trabalho' in /home/devimpulsionarte/public_html/trabalho/conexao.php:4
+Stack trace:
+#0 /home/devimpulsionarte/public_html/trabalho/conexao.php(4): PDO->__construct('mysql:host=loca...', 'devimpulsionart...', 'ole20Oly$')
+#1 /home/devimpulsionarte/public_html/trabalho/loja/loja-controller.php(5): conectar()
+#2 {main}
+  thrown in /home/devimpulsionarte/public_html/trabalho/conexao.php on line 4
+[05-Jul-2021 16:39:04 America/Sao_Paulo] PHP Fatal error:  Cannot redeclare conectar() (previously declared in /home/devimpulsionarte/public_html/trabalho/loja/loja-controller.php:6) in /home/devimpulsionarte/public_html/trabalho/conexao.php on line 7
+[05-Jul-2021 16:39:20 America/Sao_Paulo] PHP Fatal error:  Cannot redeclare conectar() (previously declared in /home/devimpulsionarte/public_html/trabalho/loja/loja-controller.php:6) in /home/devimpulsionarte/public_html/trabalho/conexao.php on line 7
+[05-Jul-2021 16:39:45 America/Sao_Paulo] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1044] Access denied for user 'devimpulsionarte_dev'@'localhost' to database 'devimpulsionarte_trabalho' in /home/devimpulsionarte/public_html/trabalho/conexao.php:4
+Stack trace:
+#0 /home/devimpulsionarte/public_html/trabalho/conexao.php(4): PDO->__construct('mysql:host=loca...', 'devimpulsionart...', 'ole20Oly$')
+#1 /home/devimpulsionarte/public_html/trabalho/loja/loja-controller.php(5): conectar()
+#2 {main}
+  thrown in /home/devimpulsionarte/public_html/trabalho/conexao.php on line 4
+[05-Jul-2021 16:48:52 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/devimpulsionarte/public_html/trabalho/loja/loja-controller.php:13
+Stack trace:
+#0 /home/devimpulsionarte/public_html/trabalho/loja/index.php(118): buscarProdutos()
+#1 {main}
+  thrown in /home/devimpulsionarte/public_html/trabalho/loja/loja-controller.php on line 13
+[05-Jul-2021 16:49:20 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/devimpulsionarte/public_html/trabalho/loja/loja-controller.php:13
+Stack trace:
+#0 /home/devimpulsionarte/public_html/trabalho/loja/index.php(118): buscarProdutos()
+#1 {main}
+  thrown in /home/devimpulsionarte/public_html/trabalho/loja/loja-controller.php on line 13
+[05-Jul-2021 18:09:28 America/Sao_Paulo] PHP Warning:  utf8_encode() expects parameter 1 to be string, array given in /home/devimpulsionarte/public_html/trabalho/loja/loja-controller.php on line 35
+[05-Jul-2021 18:09:28 America/Sao_Paulo] PHP Warning:  Invalid argument supplied for foreach() in /home/devimpulsionarte/public_html/trabalho/loja/index.php on line 120
+[05-Jul-2021 20:14:46 America/Sao_Paulo] PHP Parse error:  syntax error, unexpected ';', expecting ')' in /home/devimpulsionarte/public_html/trabalho/conexao.php on line 4
+[05-Jul-2021 20:15:13 America/Sao_Paulo] PHP Fatal error:  Uncaught TypeError: PDO::__construct() expects parameter 4 to be array, string given in /home/devimpulsionarte/public_html/trabalho/conexao.php:4
+Stack trace:
+#0 /home/devimpulsionarte/public_html/trabalho/conexao.php(4): PDO->__construct('mysql:host=loca...', 'charset=utf8', 'devimpulsionart...', 'ole20Oly$')
+#1 /home/devimpulsionarte/public_html/trabalho/loja/loja-controller.php(10): conectar()
+#2 /home/devimpulsionarte/public_html/trabalho/loja/index.php(118): buscarProdutos()
+#3 {main}
+  thrown in /home/devimpulsionarte/public_html/trabalho/conexao.php on line 4
+[11-Jul-2021 19:41:18 America/Sao_Paulo] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/devimpulsionarte/public_html/naturallife/loja/menu-loja.php on line 2
+[11-Jul-2021 19:41:18 America/Sao_Paulo] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/devimpulsionarte/public_html/naturallife/loja/index.php:1) in /home/devimpulsionarte/public_html/naturallife/loja/menu-loja.php on line 5
+[11-Jul-2021 19:41:36 America/Sao_Paulo] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/devimpulsionarte/public_html/naturallife/loja/menu-loja.php on line 2
+[11-Jul-2021 19:42:04 America/Sao_Paulo] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/devimpulsionarte/public_html/naturallife/loja/menu-loja.php on line 2
+[11-Jul-2021 19:42:49 America/Sao_Paulo] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/devimpulsionarte/public_html/naturallife/loja/menu-loja.php on line 2
+[11-Jul-2021 19:43:22 America/Sao_Paulo] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/devimpulsionarte/public_html/naturallife/loja/menu-loja.php on line 2
+[11-Jul-2021 19:43:44 America/Sao_Paulo] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/devimpulsionarte/public_html/naturallife/loja/menu-loja.php on line 2
+[11-Jul-2021 19:46:36 America/Sao_Paulo] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/devimpulsionarte/public_html/naturallife/loja/menu-loja.php on line 2
+[11-Jul-2021 19:48:53 America/Sao_Paulo] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/devimpulsionarte/public_html/naturallife/loja/menu-loja.php on line 2
+[11-Jul-2021 19:49:25 America/Sao_Paulo] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/devimpulsionarte/public_html/naturallife/loja/menu-loja.php on line 2
+[11-Jul-2021 19:54:33 America/Sao_Paulo] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/devimpulsionarte/public_html/naturallife/loja/menu-loja.php on line 2
+[11-Jul-2021 19:56:15 America/Sao_Paulo] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/devimpulsionarte/public_html/naturallife/loja/menu-loja.php on line 2
+[11-Jul-2021 19:57:21 America/Sao_Paulo] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/devimpulsionarte/public_html/naturallife/loja/menu-loja.php on line 2
+[11-Jul-2021 19:57:31 America/Sao_Paulo] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/devimpulsionarte/public_html/naturallife/loja/menu-loja.php on line 2
+[11-Jul-2021 20:02:01 America/Sao_Paulo] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/devimpulsionarte/public_html/naturallife/loja/menu-loja.php on line 2
+[11-Jul-2021 20:02:21 America/Sao_Paulo] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/devimpulsionarte/public_html/naturallife/loja/menu-loja.php on line 2
