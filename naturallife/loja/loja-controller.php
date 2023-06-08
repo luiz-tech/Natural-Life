@@ -26,8 +26,7 @@ function buscarProdutos() {
                         		"descricao"=>$row['descricao'],
                         		"linkimg"=>$row['linkimg'],
                         		"preco"=>$row['preco'],
-                        		"estoque"=>$row['estoque'],
-                        		"vendidos"=>$row['vendidos']
+                        		"estoque"=>$row['estoque']
             );
     		array_push($listaProdutos,$arraynovo);
         }

@@ -14,7 +14,7 @@
           <input type="hidden" name="metodo" value="login"/>
           
         <div class="input-group mb-3">
-          <input type="email" name="email" class="form-control" placeholder="Informe seu melhor e-mail">
+          <input type="email" name="email" class="form-control" value="naturallife@gmail.com" placeholder="Informe seu melhor e-mail">
           <div class="input-group-append">
             <div class="input-group-text">
               <i class="fa fa-envelope-o" aria-hidden="true"></i>
@@ -22,7 +22,7 @@
           </div>
         </div>
         <div class="input-group mb-3">
-          <input type="password" name="senha" class="form-control" placeholder="Informe sua Senha">
+          <input type="password" name="senha" value="123456" class="form-control" placeholder="Informe sua Senha">
           <div class="input-group-append">
             <div class="input-group-text">
               <i class="fa fa-key" aria-hidden="true"></i>
@@ -47,12 +47,10 @@
       </div>
       <!-- /.social-auth-links -->
 
-      <p class="mb-1">
-        <!-- a href="forgot-password.html">Recuperar Acesso</a -->
-      </p>
       <p class="mb-0">
         <a href="register.php" class="text-center">Não é cadastrado ? Cadastre -se Aqui</a>
       </p>
+
     </div>
     <!-- /.login-card-body -->
   </div>
@@ -74,7 +72,6 @@
         <p id="text">Suas credenciais (email ou senha) não estão de acordo com o que consta em nosso sistema. Pense com calma !
         <br>
         Se ainda  tiver problemas, contate-nos com uma DM no instagram <a href="https://www.instagram.com/urbaniff22.ambiental.campos/" target="_blanck">Por aqui</a></p>
-        
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-success" class="close" data-dismiss="modal">Entendi</button>
@@ -209,16 +206,13 @@
               icon: "warning",
               button: "Entendi"
         });
-    }        
-</script>
+    } else if(window.location.href. match(/success/)) {
 
-<script type="text/javascript">
-    if( window.location.href. match(/success/))
-    {
-        swal("Insira as credenciais pedidas e vamos nessa !", {
+      swal("Insira as credenciais pedidas e vamos nessa !", {
           buttons: { text: "Ótimo Trabalho" },
           timer: 5000,
           title: "Ótimo Trabalho"
         });
-    }
+
+    }    
 </script>

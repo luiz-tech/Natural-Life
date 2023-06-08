@@ -9,11 +9,8 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
           <ul class="navbar-nav mr-auto ">
-            <li class="nav-item active border-right border-left order-success">
-              <a class="nav-link text-primary" href="#">HomePage</span></a>
-            </li>
             <li class="nav-item border-right order-success">
-              <a class="nav-link text-primary" href="loja/">Lojinha</a>
+              <a class="nav-link text-primary" href="login.php">Lojinha</a>
             </li>
             <li class="nav-item border-right order-success">
               <a class="nav-link text-primary" href="educacao_ambiental/">Projeto Ambiental</a>
@@ -97,7 +94,6 @@
             definiu saúde como um estado de completo bem-estar físico, mental e social, e não apenas
             como a ausência de doença ou enfermidade. A percepção do conceito de qualidade de vida também
             tem muitos pontos em comum com a definição de saúde.</p>
-            <p><a class="btn btn-secondary" href="#" role="button">Acessar área de membros &raquo;</a></p>
           </div><!-- /.col-lg-4 -->
           
           <div class="col-lg-4 transparencia-success">
@@ -140,8 +136,8 @@
             que <b class="text-info">você tenha mais saúde e saúde em abundância.</b></p>
           </div>
           <div class="col-md-5">
-              <img width=500 height=500 class="transparencia img-circle featurette-image img-fluid mx-auto" src="imagens/moca-deitada-na-grama.png">
-              <img width=500 height=500 class="transparencia img-circle featurette-image img-fluid mx-auto" src="http://abreucardiologia.com.br/wp-content/uploads/2020/04/check-up-saude-do-coracao-1579176464276_v2_1920x1083.jpg">
+              <img width=500 height=500 class="transparencia img-circle featurette-image img-fluid mx-auto mb-1" src="imagens/moca-deitada-na-grama.png">
+              <img width=500 height=500 class="transparencia img-circle featurette-image img-fluid mx-auto mt-1" src="http://abreucardiologia.com.br/wp-content/uploads/2020/04/check-up-saude-do-coracao-1579176464276_v2_1920x1083.jpg">
           </div> 
         </div>
 
@@ -163,8 +159,8 @@
             limentar</p>
           </div>
           <div class="col-md-5 order-md-1">
-            <img width=500 height=500 class="transparencia img-circle featurette-image img-fluid mx-auto" src="https://redepara.com.br/imagens/galeria/118801/thumbs/0c545841aa8d4eab98c011437cc930e2.jpg" alt="Generic placeholder image">
-            <img width=500 height=500 class=" transparencia img-circle featurette-image img-fluid mx-auto" src="https://static.todamateria.com.br/upload/al/im/alimentacaosaudauvel.jpg" alt="Generic placeholder image">
+            <img width=500 height=500 class="transparencia img-circle featurette-image img-fluid mx-auto mb-1" src="https://redepara.com.br/imagens/galeria/118801/thumbs/0c545841aa8d4eab98c011437cc930e2.jpg" alt="Generic placeholder image">
+            <img width=500 height=500 class=" transparencia img-circle featurette-image img-fluid mx-auto mt-2" src="https://static.todamateria.com.br/upload/al/im/alimentacaosaudauvel.jpg" alt="Generic placeholder image">
           </div>
         </div>
 

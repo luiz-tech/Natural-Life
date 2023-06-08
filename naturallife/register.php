@@ -53,14 +53,6 @@
             </div>
           </div>
         </div>
-        <div class="input-group mb-3">
-          <input type="number" class="form-control" name="telefone" placeholder="Informe um telefone para contato">
-          <div class="input-group-append">
-            <div class="input-group-text">
-              <i class="fa fa-phone" aria-hidden="true"></i>
-            </div>
-          </div>
-        </div>
         <div class="row">
           <div class="col-12">
             <div class="icheck-primary">

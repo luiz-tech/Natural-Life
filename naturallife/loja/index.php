@@ -9,7 +9,7 @@ if(!isset($_SESSION['logado'])) {
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>LOJA | NaturalLife</title>
+  <title>Store | NaturalLife</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Font Awesome -->
@@ -135,8 +135,8 @@ if(!isset($_SESSION['logado'])) {
                                          
                                          <div class="col-sm-4 text-center">
                                             <div class="description-block">
-                                                <h5 class="description-header">Vendidos</h5>
-                                                <span class="description-text"><?php echo $produto['vendidos'];?></span>
+                                                <h5 class="description-header">Estoque</h5>
+                                                <span class="description-text"><?php echo $produto['estoque'];?></span>
                                             </div>
                                          </div>
                                          

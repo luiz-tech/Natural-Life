@@ -92,25 +92,7 @@
           </a>
           <div class="dropdown-divider"></div>
           <a href="#" class="dropdown-item">
-            <i class="fa fa-phone" aria-hidden="true"></i> <b>Telefone:</b> <?php echo $_SESSION['telefone']; ?>
-            <span class="float-right text-muted text-sm"></span>
-          </a>
-          <div class="dropdown-divider"></div>
-          <a href="#" class="dropdown-item">
-            <i class="fa fa-user-plus" aria-hidden="true"></i> <b>Nível:</b>
-            <?php 
-                switch($_SESSION['nivel'])
-                {
-                    case "A":
-                        echo " Administrador";
-                        break;
-                    
-                    case "C":
-                        echo " Cliente";
-                        break;
-                }
-            
-            ?>
+            <i class="fa fa-id-card" aria-hidden="true"></i> <b>E-mail:</b> <?php echo $_SESSION['email']; ?>
             <span class="float-right text-muted text-sm"></span>
           </a>
           <div class="dropdown-divider"></div>
@@ -137,7 +119,7 @@
           <img src="adminlte/dist/img/avatar.png" class="img-circle elevation-2">
         </div>
         <div class="info">
-          <a href="" class="d-block text-light"><?php $nome = explode(" ",$_SESSION['nome']); echo $nome[0]." ".$nome[1]." ".$nome[2] ?></a>
+          <a href="" class="d-block text-light"><?php echo $_SESSION['nome'];?></a>
         </div>
       </div >
 
@@ -213,7 +195,7 @@
 
   </aside >
   
- <div id="welcome-store" class="modal fade" tabindex="-1" role="dialog">
+ <div id="sobrenos" class="modal fade" tabindex="-1" role="dialog">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -249,9 +231,11 @@
       <div class="modal-body">
         <p>Assista o vídeo tutorial abaixo. Caso ainda esteje com dúvidas. Mande -nos uma mensagem</p>
         
-        <video class="container-fluid" width="400" height="400" controls>
-          <source src="imagens/tutorial.mp4" type="video/mp4">
-        </video>
+        <ul>
+          <li>Abra seu Instagram</li>
+          <li>Digite na barra de pesquisa: "Urbaniff"</li>
+          <li>Mande-nos uma mensagem via Direct</li>
+        </ul>
         
       </div>
       <div class="modal-footer">

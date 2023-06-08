@@ -24,7 +24,7 @@ session_start();
                 break;
                     
             case "autocadastro":
-                autoCadastro($_POST['nome'],$_POST['email'],$_POST['senha'],$_POST['telefone'],$_POST['cpf'],$_POST['termos']);
+                autoCadastro($_POST['nome'],$_POST['email'],$_POST['senha'],$_POST['cpf'],$_POST['termos']);
                 break;
                 
         }
@@ -34,11 +34,12 @@ session_start();
     }
 
 // Função de Autenticação dos Usuários
-function loginUser($email,$senhahash) 
+function loginUser($email,$senha) 
 {
     $con = conectar();
     
-    $sql_auth = "SELECT * FROM usuarios u WHERE email = '".$email."' LIMIT 1";
+    $sql_auth = "SELECT * FROM usuarios WHERE email = '".$email."' LIMIT 1";
+    
     $rs = $con->query($sql_auth);
     
     //verificação de integridade
@@ -46,30 +47,21 @@ function loginUser($email,$senhahash)
         
         $row = $rs->fetch(PDO::FETCH_ASSOC);
         
-            //verificação de status
-            if( ($row['status'] == "A") )
-            {   
-                if(password_verify($senhahash,$row['senha']) == true)
+        
+                if(password_verify($senha, $row['senha']))
                 {
                     //Preenchimento da sessão do usuário logado
                 
                 $_SESSION['id'] = $row['id'];
                 $_SESSION['nome'] = $row['nome'];
                 $_SESSION['email'] = $row['email'];
-                $_SESSION['foto'] = $row['foto'];
-                $_SESSION['nivel'] = $row['nivel'];
-                $_SESSION['status'] = $row['status'];
-                $_SESSION['telefone'] = $row['telefone'];
                 $_SESSION['cpf'] = $row['cpf'];
                 
                 $_SESSION['logado'] = true;
-                $_SESSION['welcome'] = true;
                 
                 echo "<script language='javascript'>location.href = 'loja/?msg=welcome';</script>";
                 
                 } else { header("Location: login.php?msg=password_erro"); }
-                    
-            }  else { header("Location: login.php?msg=userinative"); }
         
     } else {  header("Location: login.php?msg=notfound"); }
 }
@@ -120,7 +112,7 @@ function logoutUser()
 }
 
 //Função de Auto Cadastro pelo usuário
-function autoCadastro($nome,$email,$senha,$telefone,$cpf,$termos)
+function autoCadastro($nome,$email,$senha,$cpf,$termos)
 {
     $con = conectar();
     
@@ -138,8 +130,8 @@ function autoCadastro($nome,$email,$senha,$telefone,$cpf,$termos)
        $senhahash = password_hash($senha, PASSWORD_DEFAULT);
        
        //não  ha no banco, logo registre -o
-        $sql_insert = "INSERT INTO usuarios (nome,email,senha,foto,nivel,status,telefone,cpf) 
-        VALUES('".$nome."','".$email."','".$senhahash."',null,'C','A','".$telefone."','".$cpf."')";
+        $sql_insert = "INSERT INTO usuarios (nome,email,senha,cpf) 
+        VALUES('".$nome."','".$email."','".$senhahash."','".$cpf."')";
         
         $stmt = $con->prepare($sql_insert);
         $stmt->execute();
@@ -170,24 +162,24 @@ function buscarArtigos()
     WHERE a.idautor = u.id";
     
     $rs = $con->query($sql_select);
-	
-	$listaArtigos = array();
+    
+    $listaArtigos = array();
     
     //verificação de integridade
     if (!empty($rs)) {
         
         while($row = $rs->fetch(PDO::FETCH_ASSOC))
         { 
-    		$arraynovo = Array( "id"=>$row['id'],
-    		                    "autor"=>$row['autor'],
-    		                    "foto"=>$row['foto'],
-                        		"titulo"=>$row['titulo'],
-                        		"subtitulo"=>$row['subtitulo'],
-                        		"autor"=>$row['autor'],
-                        		"dtAtualizacao"=>$row['dtAtualizacao'],
-                        		"texto"=>$row['texto']
+            $arraynovo = Array( "id"=>$row['id'],
+                                "autor"=>$row['autor'],
+                                "foto"=>$row['foto'],
+                                "titulo"=>$row['titulo'],
+                                "subtitulo"=>$row['subtitulo'],
+                                "autor"=>$row['autor'],
+                                "dtAtualizacao"=>$row['dtAtualizacao'],
+                                "texto"=>$row['texto']
             );
-    		array_push($listaArtigos,$arraynovo);
+            array_push($listaArtigos,$arraynovo);
         }
     }
 
